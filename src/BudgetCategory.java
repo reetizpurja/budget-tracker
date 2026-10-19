@@ -10,4 +10,15 @@ public class BudgetCategory {
       this.limit = limit;
       this.spent = spent;
     }
+    // Getter
+    public String getName(){
+      return name;
+    }
+    public double getLimit(){
+      return limit;
+    }
+    public double getSpent(){
+      return spent;
+    }
+
 }
