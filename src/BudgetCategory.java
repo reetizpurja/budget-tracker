@@ -21,4 +21,12 @@ public class BudgetCategory {
       return spent;
     }
 
+    // toString
+    @Override 
+    public String toString(){
+      String limitString = String.format("$%.2f", limit);
+      String spentString = String.format("$%.2f", spent);
+      return name + " :limit " + limitString + ", spent " + spentString;
+    }
+
 }
