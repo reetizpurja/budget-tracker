@@ -5,4 +5,9 @@ public class BudgetCategory {
     private double spent;
 
     // Constructors
+    public BudgetCategory(String name, double limit, double spent){
+      this.name = name;
+      this.limit = limit;
+      this.spent = spent;
+    }
 }
