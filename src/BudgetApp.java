@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -25,9 +26,11 @@ public class BudgetApp {
 
             categories.add(new BudgetCategory(category, limit, spent));
         }
-
+        Collections.sort(categories);
         System.out.println(categories);
     }
+
+    
 
     /**
      * Returns overall how much over/under budget a person is given a list of their
