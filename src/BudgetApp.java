@@ -26,7 +26,7 @@ public class BudgetApp {
 
             categories.add(new BudgetCategory(category, limit, spent));
         }
-        Collections.sort(categories);
+        Collections.sort(categories, Collections.reverseOrder());
         System.out.println(categories);
     }
 
